@@ -4,25 +4,28 @@ html {
 
 * {
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-h1{
+
+h1 {
     color: #6666ff;
 }
-#tac{
+
+#tac {
     color: #16DB93;
 }
-#toe{
-color: #F61067;
+
+#toe {
+    color: #F61067;
 }
 
 .player-Turn {
@@ -34,7 +37,7 @@ color: #F61067;
 .player2 {
     background-color: #F61067;
     color: #ffff;
-    padding: 10px 100px;
+    padding: 10px 120px;
     text-align: center;
     border-radius: 10px;
     font-size: 2rem;
@@ -91,7 +94,6 @@ color: #F61067;
 
 .results h1 {
     color: #ffff;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 40px;
 }
 
@@ -118,9 +120,30 @@ color: #F61067;
     padding: 10px 70px;
     text-align: center;
 }
-.X{
-    color:#EAC5D8;
+
+.X {
+    color: #EAC5D8;
 }
-.O{
+
+.O {
     color: #5F7367;
+}
+
+@media screen and (max-width:991px){
+
+    .player-Turn {
+        display: flex;
+        flex-direction: column;
+    }
+    .player1,
+    .player2 {
+        padding: 10px 20px;
+    }
+    .gameBoard {
+        margin: 40px;
+    }
+    .cell {
+        font-size: 2rem;
+    }
+    
 }
