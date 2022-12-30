@@ -16,8 +16,21 @@
         <h1>Tic <span id="tac">Tac</span>  <span id="toe">Toe</span></h1>
     </header>
     <section class="player-Turn">
-        <div class="player1 playerTurn">O's Trun</div>
-        <div class="player2">X</div>
+        <div class="player1 playerTurn">
+            <h2>O</h2>
+            <div class="counter">
+               <p>Wins: <span class="winsO">0</span></p> 
+                <p>Lose: <span class="looseO">0</span></p>
+            </div>
+        </div>
+    
+        <div class="player2">
+            <h2>X</h2>
+            <div class="counter">
+                <p>Wins: <span class="winsX">0</span></p> 
+                <p>Lose: <span class="looseX">0</span></p> 
+            </div>
+        </div>
     </section>
 
     <div class="gameBoard">
@@ -33,7 +46,8 @@
     </div>
     <div class="results inactive">
         <h1 id="resultText"></h1>
-        <button>Restart</button>
+        <button value = "continue">Continue</button>
+        <button value = "Reset" id="restart">Reset</button>
     </div>
 </body>
 

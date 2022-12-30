@@ -13,8 +13,8 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    text-align: center;
 }
+
 
 h1 {
     color: #6666ff;
@@ -37,13 +37,25 @@ h1 {
 .player2 {
     background-color: #F61067;
     color: #ffff;
-    padding: 10px 120px;
-    text-align: center;
     border-radius: 10px;
     font-size: 2rem;
     margin: 25px;
+    padding:0 50px;
+    text-align: left;
+   
 }
-
+.counter{
+    height:60px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-top:-50px;
+    margin-left:50px;
+    font-size: 0.8rem;
+}
+p{
+    margin-bottom: 10px;
+}
 .active {
     background-color: #ffff;
     color: blue;
@@ -81,9 +93,9 @@ h1 {
 .results {
     background-color: rgba(0, 0, 0, 0.9);
     display: flex;
-    align-items: center;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    justify-content:center;
     position: fixed;
     left: 0;
     right: 0;
@@ -95,14 +107,15 @@ h1 {
 .results h1 {
     color: #ffff;
     font-size: 40px;
+    text-align: center;
 }
 
 .results button {
     border-radius: 15px;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px 10px;
     border-style: none;
-    margin-top: 20px;
+    margin-top: 40px;
     cursor: pointer;
 }
 
@@ -113,12 +126,17 @@ h1 {
 .disable {
     pointer-events: none;
 }
+.activeCell{
+    pointer-events:painted;
+}
 
 .playerTurn {
     background-color: #16DB93;
     color: #133C55;
-    padding: 10px 70px;
-    text-align: center;
+}
+#restart{
+   padding: 5px 20px;
+    margin-top: 25px;
 }
 
 .X {
@@ -135,15 +153,36 @@ h1 {
         display: flex;
         flex-direction: column;
     }
+   
     .player1,
     .player2 {
-        padding: 10px 20px;
+        padding:5px;
+        font-size: 1rem;
     }
     .gameBoard {
         margin: 40px;
     }
     .cell {
         font-size: 2rem;
+    }
+    h2{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .counter{
+        margin-top: -30px;
+        font-size: 0.6rem;
+    }
+    .cell {
+        height: 50px;
+        width: 50px;
+        font-size: 2rem;
+    }
+    .results h1 {
+        font-size: 20px;
+    }
+    .results button {
+        font-size: 10px;
     }
     
 }
